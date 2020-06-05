@@ -38,6 +38,10 @@ a:visited,
 a:active,
 a:hover{
 	text-decoration:none;
+	-moz-transition:0.3s ease-in;
+	-webkit-transition:0.3s ease-in;
+	-o-transition:0.3s ease-in;
+	transition:0.3s ease-in;
 }
 
 img{
@@ -54,7 +58,7 @@ pre{
 	white-space:0;
 	white-space:0;
 	word-wrap:break-word;
-	font:500 0.9em/normal 'PT Mono', monospace;
+	font:normal 0.9em/normal 'Roboto Mono', monospace;
 }
 
 blockquote{
@@ -94,7 +98,7 @@ sup{
 
 b,
 strong{
-	font-weight:700;
+	font-weight:500;
 	color:rgb(var(--Accent));
 }
 
