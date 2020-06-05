@@ -239,3 +239,16 @@ ol li:before{
 .audio-media iframe.tumblr_audio_player{
 	height:85px!important;
 }
+
+.credit{
+	position:fixed;
+	width:1em;
+	height:1em;
+	right:15px; bottom:15px;
+	background:#FFFFFF;
+}
+
+.credit a{
+	color:#111111;
+        border:none;
+}
