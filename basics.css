@@ -131,7 +131,7 @@ ol li{
 ol li:before,
 ul li:before{
 	display:inline-block;
-	vertical-align:baseline!important;
+	vertical-align:baseline;
 	margin-right:5px;
 }
 
