@@ -25,6 +25,14 @@ html{
 	-o-font-smoothing:antialiased;
 	hing:grayscale;
 	cursor:default;
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+	box-sizing:border-box;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
 }
 
 body{
