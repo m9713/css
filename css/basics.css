@@ -108,7 +108,7 @@ sup{
 b,
 strong{
 	font-weight:bold;
-	color:rgb(var(--Accent));
+	color:rgb(var(--Content-Accent));
 }
 
 em,
