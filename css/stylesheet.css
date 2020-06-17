@@ -87,7 +87,7 @@ aside{
 }
 
 .side-item{
-    color:rgba((var(--Sidebar-Content)),0.65);
+    color:rgba(var(--Sidebar-Content)),0.65);
     background:none;
     margin-bottom:25px;
     cursor:pointer;}
@@ -95,7 +95,7 @@ aside{
         width:1.2em;
         height:1.2em;}
     .side-item.active, .search.active{color:rgb(var(--Sidebar-Accent));}
-    .side-item:not(.active):hover{color:rgba((var(--Sidebar-Content)),1);}
+    .side-item:not(.active):hover{color:rgba(var(--Sidebar-Content)),1);}
     .side-item:last-child{margin:0;}
 
 .toggle{
@@ -113,7 +113,7 @@ aside{
         display:block;
         width:100%;
         height:2px;
-        background-color:rgba((var(--Sidebar-Content)),0.65);
+        background-color:rgba(var(--Sidebar-Content)),0.65);
         outline:1px solid transparent;
         -webkit-transition-property:background-color, -webkit-transform;
         -moz-transition-property:background-color, -moz-transform;
@@ -128,7 +128,7 @@ aside{
             content:'';}
         .toggle span::before{top:-8px;}
         .toggle span::after{top:8px;}
-    .toggle:hover span, .toggle:hover span::before, .toggle:hover span::after{background-color:rgba((var(--Sidebar-Content)),1);}
+    .toggle:hover span, .toggle:hover span::before, .toggle:hover span::after{background-color:rgba(var(--Sidebar-Content)),1);}
     .toggle.active span {background-color:transparent;}
     .toggle.active span::before{
         -webkit-transform:translateY(8px) rotate(45deg);
@@ -786,7 +786,7 @@ footer{
         box-sizing:border-box;}
         .main li:before{
             font-size:0.8em;
-            color:rgba((var(--Sidebar-Content)),0.65);
+            color:rgba(var(--Sidebar-Content)),0.65);
             display:inline-block;}
         .main li{
             width:calc(100% / 4);
@@ -798,11 +798,11 @@ footer{
             text-align:left;}
             .main li:nth-child(odd){padding-right:15px;}
             .main li:last-of-type{margin:0 0 5px;}
-            .main li a{color:rgba((var(--Sidebar-Content)),0.65);}
+            .main li a{color:rgba(var(--Sidebar-Content)),0.65);}
             .main li a.active{
                 color:rgb(var(--Sidebar-Accent));
                 background:none;}
-            .main li a:hover{color:rgba((var(--Sidebar-Content)),1);}
+            .main li a:hover{color:rgba(var(--Sidebar-Content)),1);}
 }
 
 @media (max-width:600px){
