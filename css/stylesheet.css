@@ -727,16 +727,16 @@ footer{
         height:17px;
     }
 
-    ::-webkit-scrollbar{background-color:rgb({RGBcolor:accent});}
+    ::-webkit-scrollbar{background-color:rgb(var(--Accent));}
 
     ::-webkit-scrollbar-track{
-        border:8px solid rgb({RGBcolor:accent});
-        background-color:rgb({RGBcolor:background});
+        border:8px solid rgb(var(--Accent));
+        background-color:rgb(var(--Background));
     }
 
     ::-webkit-scrollbar-thumb{
-        border:8px solid rgb({RGBcolor:accent});
-        background-color:rgb({RGBcolor:text});
+        border:8px solid rgb(var(--Accent));
+        background-color:rgb(var(--Text));
         min-height:24px;
         min-width:24px;
         -webkit-border-radius:6px;
@@ -745,13 +745,13 @@ footer{
 }
 
 @media (max-width:850px){
-    ::-webkit-scrollbar{background-color:rgb({RGBcolor:background});}
+    ::-webkit-scrollbar{background-color:rgb(var(--Background));}
     ::-webkit-scrollbar-track{
-        border:8px solid rgb({RGBcolor:background});
-        background-color:rgb({RGBcolor:borders});}
+        border:8px solid rgb(var(--Background));
+        background-color:rgb(var(--Text));}
     ::-webkit-scrollbar-thumb{
-        border:8px solid rgb({RGBcolor:background});
-        background-color:rgb({RGBcolor:text});
+        border:8px solid rgb(var(--Background));
+        background-color:rgb(var(--Text));
     }
     iframe.tmblr-iframe{
         right:15px;
