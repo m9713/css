@@ -484,6 +484,15 @@ a.link_post{
     -webkit-border-radius:50%;
 }
 
+.read_more{
+    background:rgb(var(--Link));
+    padding:5px 9px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    font:bold 1.2em/normal 'Computer Modern Sans', sans-serif;
+    color:white;
+}
+
 /*permalink*/
 
 .permalink{
