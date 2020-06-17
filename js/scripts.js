@@ -15,9 +15,11 @@ $(document).ready(function(){
       maxWidth:160, 
       theme:'tooltipster-borderless'
   });
-  $('.toggle').click(function(){
+  $('.toggle, .overlay').click(function(){
     $('.toggle').toggleClass('active');
+    $('.overlay').toggleClass('show');
     $('nav').toggleClass('show');
+    $('body').toggleClass('overflow');
   });
   $('.fade').slick({
     dots:true,
