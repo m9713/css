@@ -748,17 +748,12 @@ footer{
     ::-webkit-scrollbar{background-color:rgb(var(--Background));}
     ::-webkit-scrollbar-track{
         border:8px solid rgb(var(--Background));
-        background-color:rgb(var(--Text));}
+        background-color:rgb(var(--Borders));}
     ::-webkit-scrollbar-thumb{
         border:8px solid rgb(var(--Background));
         background-color:rgb(var(--Text));
     }
-    iframe.tmblr-iframe{
-        right:15px;
-{block:ifShowTumblrControlsOnHover}
-        right:0;
-{/block:ifShowTumblrControlsOnHover}
-    }
+    iframe.tmblr-iframe{right:0;}
     .cc{right:15px;}
     main{width:calc(100vw);}
     section, footer{width:70%;}
