@@ -564,7 +564,7 @@ article:not(.edd) .tags{
     margin:0;
     box-sizing:border-box;}
     .tags a{
-        display:inline-block;
+        display:none;
         margin-right:15px;
         background:none;
         letter-spacing:.01rem;
@@ -575,14 +575,7 @@ article:not(.edd) .tags{
             font-size:0.7rem;}
         .tags a:hover{color:rgb(var(--Text));}
         .tags a:last-of-type{margin-right:0;}
-        .tags svg{
-            display:inline-block;
-            width:1em;
-            height:1em;
-            vertical-align:middle;
-            margin-right:5px;
-            color:rgb(var(--Text));
-        }
+        .tags a[href$='/tagged/theme'], .tags a[href$='/tagged/tutorial'], .tags a[href$='/tagged/resources']{display:inline-block;}
 
 /*notes*/
 
@@ -774,6 +767,13 @@ footer{
         min-width:24px;
         -webkit-border-radius:6px;
         border-radius:6px;}
+    main::-webkit-scrollbar{background-color:rgb(var(--Background));}
+    main::-webkit-scrollbar-track{
+        border:8px solid rgb(var(--Background));
+        background-color:rgb(var(--Borders));}
+    main::-webkit-scrollbar-thumb{
+        border:8px solid rgb(var(--Background));
+        background-color:rgb(var(--Text));}
 }
 
 @media (max-width:850px){
