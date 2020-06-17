@@ -43,6 +43,11 @@ $(document).ready(function(){
       flexibleFrames($(".video"));
   }
   $(document).ready(flexFrame);
+  $('article').find('pre').each(function() {
+    if ( $(this).find('code').length === 0 ) {
+      $(this).wrapInner('<code></code>');
+    }
+  });
   $('a[href*="t.umblr.com/redirect"]').each(function(){
     var originalURL = $(this).attr("href").split("?z=")[1].split("&t=")[0];
     var replaceURL = decodeURIComponent(originalURL);
