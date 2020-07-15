@@ -36,6 +36,16 @@ img {
 	height: auto;
 }
 
+::selection{
+    background-color :rgba(0,0,0,0.3);
+    color: inherit !important;
+}
+
+::-moz-selection{
+    background-color :rgba(0,0,0,0.3);
+    color: inherit !important;
+}
+
 /*link*/
 
 a,
