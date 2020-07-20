@@ -767,283 +767,103 @@ a.like-b .liked+.b:before {
 }
 
 .tags a[href$='/tagged/$Tag-One'] {
-	color: {
-		color: tag one color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag one color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-One-Color));
+	background-color:rgba(var(--Tag-One-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Two'] {
-	color: {
-		color: tag two color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag two color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Two-Color));
+	background-color:rgba(var(--Tag-Two-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Three'] {
-	color: {
-		color: tag three color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag three color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Three-Color));
+	background-color:rgba(var(--Tag-Three-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Four'] {
-	color: {
-		color: tag four color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag four color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Four-Color));
+	background-color:rgba(var(--Tag-Four-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Five'] {
-	color: {
-		color: tag five color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag five color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Five-Color));
+	background-color:rgba(var(--Tag-Five-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Six'] {
-	color: {
-		color: tag six color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag six color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Six-Color));
+	background-color:rgba(var(--Tag-Six-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Seven'] {
-	color: {
-		color: tag seven color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag seven color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Seven-Color));
+	background-color:rgba(var(--Tag-Seven-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Eight'] {
-	color: {
-		color: tag eight color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag eight color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Eight-Color));
+	background-color:rgba(var(--Tag-Eight-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Nine'] {
-	color: {
-		color: tag nine color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag nine color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Nine-Color));
+	background-color:rgba(var(--Tag-Nine-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-Ten'] {
-	color: {
-		color: tag ten color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag ten color
-		}
-
-		, 0.2);
+	color:rgb(var(--Tag-Ten-Color));
+	background-color:rgba(var(--Tag-Ten-Color), 0.2);
 }
 
 .tags a[href$='/tagged/$Tag-One']:hover {
-	color: {
-		color: tag one color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag one color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-One-Color));
+	background-color:rgba(var(--Tag-One-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Two']:hover {
-	color: {
-		color: tag two color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag two color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Two-Color));
+	background-color:rgba(var(--Tag-Two-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Three']:hover {
-	color: {
-		color: tag three color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag three color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Three-Color));
+	background-color:rgba(var(--Tag-Three-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Four']:hover {
-	color: {
-		color: tag four color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag four color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Four-Color));
+	background-color:rgba(var(--Tag-Four-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Five']:hover {
-	color: {
-		color: tag five color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag five color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Five-Color));
+	background-color:rgba(var(--Tag-Five-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Six']:hover {
-	color: {
-		color: tag six color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag six color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Six-Color));
+	background-color:rgba(var(--Tag-Six-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Seven']:hover {
-	color: {
-		color: tag seven color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag seven color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Seven-Color));
+	background-color:rgba(var(--Tag-Seven-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Eight']:hover {
-	color: {
-		color: tag eight color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag eight color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Eight-Color));
+	background-color:rgba(var(--Tag-Eight-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Nine']:hover {
-	color: {
-		color: tag nine color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag nine color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Nine-Color));
+	background-color:rgba(var(--Tag-Nine-Color), 0.35);
 }
 
 .tags a[href$='/tagged/$Tag-Ten']:hover {
-	color: {
-		color: tag ten color
-	}
-
-	;
-
-	background-color:rgba( {
-			RGBcolor:tag ten color
-		}
-
-		, 0.35);
+	color:rgb(var(--Tag-Ten-Color));
+	background-color:rgba(var(--Tag-Ten-Color), 0.35);
 }
 
 .tags a:hover {
@@ -1346,8 +1166,7 @@ footer {
 	-webkit-appearance: none;
 }
 
-@media (min-width:1001px),
-(min-height:700px) {
+@media (min-width:1001px), (min-height:700px) {
 
 	::-webkit-scrollbar {
 		width: 17px;
@@ -1463,11 +1282,7 @@ footer {
 		width: 80%;
 		height: 1.5px;
 
-		background-color:rgba( {
-				RGBcolor:text
-			}
-
-			, 1);
+		background-color:rgba(var(--Body-Font-Color), 1);
 	}
 
 	.toggle span::before {
@@ -1485,11 +1300,7 @@ footer {
 	.toggle:hover span::after,
 	.toggle.active span::before,
 	.toggle.active span::after {
-		background-color:rgba( {
-				RGBcolor:text
-			}
-
-			, 1);
+		background-color:rgba(var(--Body-Font-Color), 1);
 	}
 
 	.toggle.active span::before {
