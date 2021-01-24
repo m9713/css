@@ -1,33 +1,70 @@
-/*tumblr controls*/
+/* tumblr controls */
 
 iframe.tmblr-iframe {
     z-index: 99999999999999 !important;
+    transform: scale(0.8, 0.8);
+    transform-origin: left top;
+    -webkit-transform: scale(0.8, 0.8);
+    -webkit-transform-origin: left top;
+    -o-transform: scale(0.8, 0.8);
+    -o-transform-origin: left top;
+    -moz-transform: scale(0.8, 0.8);
+    -moz-transform-origin: left top;
+    -ms-transform: scale(0.8, 0.8);
+    -ms-transform-origin: left top;
 }
 
-/*html*/
+
+.tmblr-iframe-compact .tmblr-iframe--unified-controls {
+    width: 110% !important;
+}
+
+.iframe-controls--phone-mobile,
+.tmblr-iframe--app-cta-button,
+.tmblr-iframe:not(#new-tumblr-controls) {
+    visibility: hidden !important;
+    display: none !important;
+}
+
+.iframe-container,
+iframe#new-tumblr-controls {
+    background-color: rgb(var(--bgcolor));
+    width: 110% !important;
+    height: 54px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+/* html */
 
 html {
+    word-break: break-word;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-wrap: balance;
     font-smoothing: antialiased;
     -moz-osx-font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     hing: grayscale;
+
 }
 
 body {
     margin: 0 !important;
     line-height: 1.8em !important;
-    letter-spacing: 0.4px;
-    word-wrap: break-word;
+    letter-spacing: 0.4px !important;
+    word-wrap: break-word !important;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+img{
+    max-width:100%;
+    height:auto;
 }
 
-/*link*/
+/* links */
 
 a,
 a:link,
@@ -35,13 +72,13 @@ a:visited,
 a:active,
 a:hover {
     text-decoration: none;
-    -moz-transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
 }
 
-/*text*/
+/* text */
 
 pre,
 code {
@@ -53,23 +90,15 @@ code {
 }
 
 pre {
-    font: 0.9em 'Messina Sans Mono' !important;
-    letter-spacing: 0.07rem;
+    font: 0.9em monospace !important;
+    letter-spacing: 0.07rem !important;
     line-height: 1.8em !important;
 }
 
-code {
-    display: inline;
-    vertical-align: baseline;
-    background: #000;
-    padding: 2px 3px;
-    color: #eaeaea;
-}
-
 blockquote {
-    padding: 0 1em;
-    margin: 5px 0 5px 0.6em;
-    border-left: 2px solid #eee;
+    padding: 0 16px;
+    margin: 5px 0;
+    border-left: 1px solid rgb(var(--bordercolor));
 }
 
 h1,
@@ -77,7 +106,7 @@ h2,
 h3,
 h4 {
     font-size: 1.2em;
-    font-weight: var(--Bold-Font);
+    font-weight: var(--boldfont);
 }
 
 small,
@@ -89,7 +118,8 @@ sup {
 
 b,
 strong {
-    font-weight: var(--Bold-Font);
+    font-weight: var(--boldfont);
+
 }
 
 i,
@@ -97,99 +127,65 @@ em {
     font-style: italic;
 }
 
-/*lists*/
+/* lists */
 
 ol,
 ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
     text-align: left;
 }
 
 ol li,
 ul li {
-    margin: 0 0 0.5em;
-    padding: 0.1em 0;
     position: relative;
-}
-
-ol li:last-of-type,
-ul li:last-of-type {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0 0 0 1.5em;
 }
 
 ol li {
     counter-increment: list;
 }
 
-ol li:before {
-    content: counter(list, decimal-leading-zero) '.';
-    display: inline-block;
-    vertical-align: baseline;
-    margin-right: 5px;
-    font-size: 0.9em;
-}
-
 ul li {
     padding-left: 1.2em;
 }
 
+ol li:before,
 ul li:before {
-    content: '\f899';
-    font: 0.7em 'Font Awesome 5 Pro';
-    font-weight: 900;
     position: absolute;
-    top: calc(var(--Font-Size) / 2);
+    top: 0;
     left: 0;
 }
 
-/*lightbox*/
-
-.tmblr-lightbox,
-#tumblr_lightbox {
-    background-color: rgba(var(--color-lightbox-bg), 0.9) !important;
+ol li:before {
+    content: counter(list, lower-alpha) '.';
 }
 
-.vignette,
-#vignette,
-#tumblr_lightbox_caption,
-.lightbox-caption {
-    opacity: 0 !important;
+ul li:before {
+    content: '';
+    background-color: rgb(var(--textcolor));
+    width: 6px;
+    height: 1px;
+    top: calc(var(--fontsize) - 2px);
 }
 
-.lightbox-image,
-#tumblr_lightbox img,
-.slick-lightbox-slick-img {
-    border-radius: 1em !important;
-    border: 3px solid rgb(var(--color-lightbox-accent)) !important;
-    box-sizing: border-box !important;
+/* media */
+
+.photo {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.lightbox-image,
-#tumblr_lightbox img {
-    max-width: none;
-    box-shadow: none !important;
+.photo img,
+.tmblr-full img {
+    width: 100%;
+    display: block;
 }
 
-.slick-lightbox-slick-item.slick-slide {
-    outline: none !important;
-}
-
-.slick-lightbox-slick-img {
-    width: auto !important;
-    max-height: 80vh !important;
-}
-.slick-lightbox .slick-lightbox-inner .slick-next::before {
-    color: rgb(var(--color-lightbox-accent));
-}
-
-.slick-lightbox .slick-lightbox-inner .slick-prev,
-.slick-lightbox .slick-lightbox-inner .slick-lightbox-close {
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
-/*photosets*/
+/* photosets */
 
 .slick-dotted.slick-slider {
     margin: 0 !important;
@@ -208,105 +204,73 @@ ul li:before {
     width: 100%;
 }
 
-.item img {
-    cursor: pointer;
+.slick-prev,
+.slick-next {
+    width: 0 !important;
+    height: 0 !important;
+	border: 26px solid transparent !important;
+    z-index: 2 !important;
 }
 
-.slick-dots {
-    bottom: 0.6em;
+.slick-prev {
+	border-left-color: rgb(var(--bgcolor)) !important;
+	border-right: 0 !important;
 }
 
-.slick-dots li:before {
-    display: none !important;
+.slick-next {
+	border-right-color: rgb(var(--bgcolor)) !important;
+	border-left: 0 !important;
 }
 
-.slick-dots li {
-    width: 10px;
-    height: 10px;
-    margin: 0 10px;
-    padding: 0;
-    cursor: default;
+.slick-prev:before,
+.slick-next:before {
+    opacity: 1 !important;
+    margin-top: -4px !important;
+    font: 10px 'honeybee' !important;
+    color: rgb(var(--textcolor)) !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
 }
 
-.slick-dots li button {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    position: relative;
+.slick-prev:before {
+    content: '\ebb9' !important;
+    margin-left: -24px !important;
 }
 
-.slick-dots li button::before {
-    opacity: 1;
-    content: '' !important;
-    background-color: rgb(var(--color-accent));
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 2px solid rgb(var(--color-accent));
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    z-index: 2;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+.slick-next:before {
+    content: '\ebc6' !important;
+    margin-left: 14px !important;
 }
 
-.slick-dots li.slick-active button::before {
-    background: none;
+.slick-prev{
+    left: 0 !important;
 }
 
-.npf_row {
-    display: flex !important;
-    margin: calc(var(--NPF-Image-Spacing) / -2) !important;
-    margin-bottom: calc(var(--NPF-Image-Spacing) / 2) !important;
+[dir='rtl'] .slick-prev {
+    right: 0 !important;
 }
 
-.npf_row:last-of-type {
-    margin-bottom: calc(var(--NPF-Image-Spacing) / -2) !important;
+.slick-next {
+    right: 0 !important;
 }
 
-.tmblr-full {
-    flex: 1;
-    margin: 0 !important;
-    padding: calc(var(--NPF-Image-Spacing) / 2) !important;
-    width: auto !important;
-    height: auto !important;
-    outline: none !important;
+[dir='rtl'] .slick-next {
+    left: 0 !important;
 }
 
-/*media*/
-
-#media {
-    display: block;
-    width: 100%;
-    margin: 0;
-}
-
-#media a {
-    background: none;
-}
-
-#media img,
-.tmblr-full img {
-    width: 100%;
-    display: block;
-}
-
-/*audio*/
+/* audio */
 
 .audio-media {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100% !important;
+    height: 85px !important;
+    margin: 0 !important;
     overflow: hidden !important;
 }
 
 .audio-media iframe {
     width: 100% !important;
-    margin: 0;
-}
-
-.audio-media iframe.tumblr_audio_player {
-    height: 110px !important;
+    margin: 0 !important;
 }
 
 .soundcloud_audio_player {
@@ -317,7 +281,7 @@ ul li:before {
     max-height: 80px !important;
 }
 
-/*video*/
+/* video */
 
 .video * {
     display: block;
