@@ -1,0 +1,7 @@
+.tmblr-iframe--loaded {
+    display: none;
+}
+
+.tmblr-iframe--loaded-show {
+    display: block;
+}
