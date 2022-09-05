@@ -1,0 +1,4 @@
+iframe.tmblr-iframe {
+    filter: contrast(150%) invert(100%);
+    -webkit-filter: contrast(150%) invert(100%);
+}
