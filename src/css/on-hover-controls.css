@@ -1,0 +1,21 @@
+iframe.tmblr-iframe {
+    width: 100% !important;
+    padding-right: calc(var(--Button-Width) + var(--Content-Padding));
+    opacity: 0.0000001;
+    right: 0 !important;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+
+iframe.tmblr-iframe:hover {
+    opacity: 1 !important;
+    padding-right: calc(var(--Button-Width) + (var(--Content-Padding) * 2));
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
