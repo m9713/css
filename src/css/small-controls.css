@@ -1,0 +1,8 @@
+iframe.tmblr-iframe {
+    transform: scale(0.8, 0.8);
+    transform-origin: right top;
+    -webkit-transform: scale(0.8, 0.8);
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+}
